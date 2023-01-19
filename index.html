@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class attendance</title>
+        <link rel="stylesheet" href="index.css">
+        
+</head>
+<body>
+    <main>
+        <div id="div_1">
+            <div id="div_2">
+                <h1>Student count</h1>
+            </div>
+            <script src="index.js"></script>
+            <h2 id="count-el">0</h2>
+            <button id="present_btn" onclick="increment()">PRESENT</button>
+            <button id="save-btn" onclick="save()">SAVE</button>
+            <button id="reset-btn" onclick="reset()">RESET</button>
+            
+            <p id="days"></p>
+            <script>
+                const daysOfWeek = ["Mon  ", "Tue  ", "Wed  ", "Thur  ", "Fri"]
+                let daysList = document.getElementById("days")
+
+                for(i = 0; i < daysOfWeek.length; i++){
+                    daysList.innerHTML += daysOfWeek[i]
+                }
+            </script>
+            <p id="save-el">   </p>
+        </div>     
+    </main>
+    
+</body>
+</html>

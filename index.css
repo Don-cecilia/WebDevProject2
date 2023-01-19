@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+}
+#div_1{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: white;
+}
+button{
+    background-color: rgb(54, 236, 197);
+    border: 2px solid black;
+    border-radius: 5px;
+}

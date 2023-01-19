@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>trial</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+          </tr>
+        </thead>
+        <tbody id="days"></tbody>
+      </table>
+      
+      <script>
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let daysList = document.getElementById("days");
+      
+        for (let i = 0; i < daysOfWeek.length; i++) {
+          let row = document.createElement("tr");
+          let day = document.createElement("td");
+          day.innerHTML = daysOfWeek[i];
+          row.appendChild(day);
+          daysList.appendChild(row);
+        }
+      </script>
+</body>
